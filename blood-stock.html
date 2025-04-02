@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Stock - Blood Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <nav>
+            <a href="admin-dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="manage-donors.html"><i class="fas fa-user"></i> Manage Donors</a>
+            <a href="manage-recipients.html"><i class="fas fa-users"></i> Manage Recipients</a>
+            <a href="blood-stock.html" class="active"><i class="fas fa-tint"></i> Blood Stock</a>
+            <a href="blood-requests.html"><i class="fas fa-file-medical"></i> Blood Requests</a>
+            <a href="admin-login.html" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="admin-dashboard">
+        <h1>Blood Stock</h1>
+
+        <button class="add-stock-btn" onclick="openStockForm()">+ Add Blood Stock</button>
+
+        <!-- Blood Stock Form (Initially Hidden) -->
+        <div id="stock-form" class="form-popup">
+            <h2>Add Blood Stock</h2>
+            <form id="addStockForm">
+                <select id="bloodGroup" required>
+                    <option value="">Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                <input type="number" id="bloodUnits" placeholder="Number of Units (ml)" required>
+                <button type="submit">Add Stock</button>
+                <button type="button" onclick="closeStockForm()">Cancel</button>
+            </form>
+        </div>
+
+        <!-- Blood Stock Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Blood Group</th>
+                    <th>Available Units (ml)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="stock-list">
+                <tr>
+                    <td>A+</td>
+                    <td>1000</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

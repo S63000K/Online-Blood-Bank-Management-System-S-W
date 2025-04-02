@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report & Analysis | Blood Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+<body>
+    <div class="container">
+        <h2>Blood Bank Report & Analysis</h2>
+
+        <!-- Donor Statistics -->
+        <div class="card">
+            <h3>Donor Statistics</h3>
+            <canvas id="donorChart"></canvas>
+        </div>
+
+        <!-- Blood Stock -->
+        <div class="card">
+            <h3>Blood Stock Overview</h3>
+            <canvas id="bloodStockChart"></canvas>
+        </div>
+
+        <!-- Blood Requests -->
+        <div class="card">
+            <h3>Blood Request Analysis</h3>
+            <canvas id="requestChart"></canvas>
+        </div>
+
+        <!-- Download Report Button -->
+        <button onclick="downloadReport()">Download Report (PDF)</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

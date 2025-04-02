@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Requests - Blood Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <nav>
+            <a href="admin-dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="manage-donors.html"><i class="fas fa-user"></i> Manage Donors</a>
+            <a href="manage-recipients.html"><i class="fas fa-users"></i> Manage Recipients</a>
+            <a href="blood-stock.html"><i class="fas fa-tint"></i> Blood Stock</a>
+            <a href="blood-requests.html" class="active"><i class="fas fa-file-medical"></i> Blood Requests</a>
+            <a href="admin-login.html" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="admin-dashboard">
+        <h1>Blood Requests</h1>
+
+        <!-- Blood Requests Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Recipient Name</th>
+                    <th>Blood Group</th>
+                    <th>Units Requested</th>
+                    <th>Reason</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="request-list">
+                <tr>
+                    <td>John Doe</td>
+                    <td>O+</td>
+                    <td>2</td>
+                    <td>Emergency Surgery</td>
+                    <td class="status">Pending</td>
+                    <td>
+                        <button class="approve-btn">Approve</button>
+                        <button class="reject-btn">Reject</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

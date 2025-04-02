@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Availability</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Blood Availability</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="donor.html">Donate</a>
+            <a href="request.html">Request Blood</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Blood Availability Section -->
+    <section class="availability-section">
+        <h2>Available Blood Types</h2>
+        <p>Check the available blood stock in real-time below.</p>
+
+        <!-- Search/Filter Option -->
+        <div class="search-container">
+            <label for="bloodTypeSearch">Search by Blood Type:</label>
+            <select id="bloodTypeSearch" class="filter-select">
+                <option value="">All Blood Types</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+        </div>
+
+        <!-- Blood Stock Table -->
+        <table id="bloodStockTable">
+            <thead>
+                <tr>
+                    <th>Blood Type</th>
+                    <th>Available Units</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A+</td>
+                    <td>50</td>
+                    <td>Tirupati</td>
+                </tr>
+                <tr>
+                    <td>O+</td>
+                    <td>75</td>
+                    <td>Tirupati</td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td>30</td>
+                    <td>Tirupati</td>
+                </tr>
+                <tr>
+                    <td>AB+</td>
+                    <td>20</td>
+                    <td>Tirupati</td>
+                </tr>
+                <tr>
+                    <td>O-</td>
+                    <td>10</td>
+                    <td>Tirupati</td>
+                </tr>
+                <!-- Additional blood types can be added here -->
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

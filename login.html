@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="donor.html">Donate</a>
+            <a href="request.html">Request Blood</a>
+            <a href="availability.html">Blood Availability</a>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <h2>Login to Your Account</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <input type="password" id="password" placeholder="Enter your Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="donor.html">Sign up here</a></p>
+        <p id="loginErrorMessage" style="display: none; color: red;">⚠ Invalid email or password. Please try again.</p>
+    </section>
+
+</body>
+</html>

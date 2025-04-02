@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Recipients - Blood Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <nav>
+            <a href="admin-dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="manage-donors.html"><i class="fas fa-user"></i> Manage Donors</a>
+            <a href="manage-recipients.html" class="active"><i class="fas fa-users"></i> Manage Recipients</a>
+            <a href="blood-stock.html"><i class="fas fa-tint"></i> Blood Stock</a>
+            <a href="blood-requests.html"><i class="fas fa-file-medical"></i> Blood Requests</a>
+            <a href="admin-login.html" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="admin-dashboard">
+        <h1>Manage Recipients</h1>
+
+        <button class="add-recipient-btn" onclick="openRecipientForm()">+ Add Recipient</button>
+
+        <!-- Recipient Form (Initially Hidden) -->
+        <div id="recipient-form" class="form-popup">
+            <h2>Add Recipient</h2>
+            <form id="addRecipientForm">
+                <input type="text" id="recipientName" placeholder="Full Name" required>
+                <select id="recipientBloodGroup" required>
+                    <option value="">Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                <input type="text" id="recipientPhone" placeholder="Phone Number" required>
+                <input type="text" id="recipientCity" placeholder="City" required>
+                <button type="submit">Add Recipient</button>
+                <button type="button" onclick="closeRecipientForm()">Cancel</button>
+            </form>
+        </div>
+
+        <!-- Recipients Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Blood Group</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="recipient-list">
+                <tr>
+                    <td>Priya Sharma</td>
+                    <td>A-</td>
+                    <td>9876543211</td>
+                    <td>Chennai</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

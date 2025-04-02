@@ -1,0 +1,757 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fff5f5;
+}
+
+/* Header */
+header {
+    background-color: #b71c1c;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?blood,health') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff5252;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    background: #ffe5e5;
+    margin: 20px 0;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.step {
+    width: 200px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step i {
+    font-size: 40px;
+    color: #b71c1c;
+}
+
+/* Footer */
+footer {
+    background-color: #b71c1c;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+/* Donor Registration Page */
+.donor-form-section {
+    background: #ffe5e5;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donor-form-section h2 {
+    color: #b71c1c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select, form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form select {
+    cursor: pointer;
+}
+
+form button {
+    background-color: #ff5252;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #d32f2f;
+}
+
+/* Blood Request Page */
+.request-form-section {
+    background: #ffe5e5;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.request-form-section h2 {
+    color: #b71c1c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select, form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form select {
+    cursor: pointer;
+}
+
+form button {
+    background-color: #ff5252;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #d32f2f;
+}
+
+/* Blood Availability Page */
+.availability-section {
+    background: #ffe5e5;
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.availability-section h2 {
+    color: #b71c1c;
+}
+
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filter-select {
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #ff5252;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ffebeb;
+}
+
+/* Login Page */
+.login-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h2 {
+    color: #b71c1c;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form button {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input:focus, form button:focus {
+    outline: none;
+    border-color: #ff5252;
+}
+
+form button {
+    background-color: #ff5252;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d32f2f;
+}
+
+p {
+    text-align: center;
+    font-size: 1em;
+}
+
+p a {
+    color: #ff5252;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Page */
+.dashboard-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard-section h2 {
+    color: #b71c1c;
+    margin-bottom: 20px;
+}
+
+.dashboard-option {
+    background-color: #ffebee;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-option h3 {
+    color: #b71c1c;
+}
+
+.dashboard-option p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.dashboard-option .btn {
+    background-color: #ff5252;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.dashboard-option .btn:hover {
+    background-color: #d32f2f;
+}
+
+#logoutLink {
+    font-size: 1.2em;
+    color: #ff5252;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#logoutLink:hover {
+    text-decoration: underline;
+}
+
+/* Contact Us Page */
+.contact-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #b71c1c;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+form input, form textarea, form button {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input:focus, form textarea:focus, form button:focus {
+    outline: none;
+    border-color: #ff5252;
+}
+
+form button {
+    background-color: #ff5252;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d32f2f;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #b71c1c;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sidebar nav a:hover, .sidebar nav a.active {
+    background: #ff5252;
+}
+
+/* Main Dashboard Section */
+.admin-dashboard {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+.admin-dashboard h1 {
+    color: #b71c1c;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Stats */
+.dashboard-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    background: #ffebee;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 {
+    font-size: 2em;
+    color: #b71c1c;
+}
+
+.stat-box p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Donor Form */
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.form-popup h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-popup input, .form-popup select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-popup button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-popup button[type="submit"] {
+    background: #b71c1c;
+    color: white;
+}
+
+.form-popup button[type="button"] {
+    background: #d32f2f;
+    color: white;
+}
+
+/* Open Form Button */
+.add-donor-btn {
+    background: #b71c1c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.add-donor-btn:hover {
+    background: #ff5252;
+}
+
+/* Recipient Form */
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.form-popup h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-popup input, .form-popup select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-popup button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-popup button[type="submit"] {
+    background: #b71c1c;
+    color: white;
+}
+
+.form-popup button[type="button"] {
+    background: #d32f2f;
+    color: white;
+}
+
+/* Open Form Button */
+.add-recipient-btn {
+    background: #b71c1c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.add-recipient-btn:hover {
+    background: #ff5252;
+}
+
+/* Blood Stock Form */
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.form-popup h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-popup input, .form-popup select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-popup button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-popup button[type="submit"] {
+    background: #b71c1c;
+    color: white;
+}
+
+.form-popup button[type="button"] {
+    background: #d32f2f;
+    color: white;
+}
+
+/* Open Form Button */
+.add-stock-btn {
+    background: #b71c1c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.add-stock-btn:hover {
+    background: #ff5252;
+}
+
+/* Blood Requests Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #b71c1c;
+    color: white;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.approved {
+    color: green;
+}
+
+.status.rejected {
+    color: red;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.approve-btn {
+    background-color: green;
+    color: white;
+}
+
+.reject-btn {
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d32f2f;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b71c1c;
+}

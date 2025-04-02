@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="donor.html">Donate Blood</a>
+            <a href="request.html">Request Blood</a>
+            <a href="availability.html">Blood Availability</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html" id="logoutLink">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section">
+        <h2>Welcome, [User's Name]</h2>
+
+        <!-- Donor Section -->
+        <div class="dashboard-option" id="donorSection">
+            <h3>Your Donation Records</h3>
+            <p>Track your blood donations, view your donation history, and more.</p>
+            <a href="donor.html" class="btn">Donate Blood</a>
+            <a href="donation-history.html" class="btn">View Donation History</a>
+        </div>
+
+        <!-- Recipient Section -->
+        <div class="dashboard-option" id="recipientSection">
+            <h3>Your Request Records</h3>
+            <p>View your blood request history, and track your request status.</p>
+            <a href="request.html" class="btn">Request Blood</a>
+            <a href="request-history.html" class="btn">View Request History</a>
+        </div>
+    </section>
+
+</body>
+</html>
